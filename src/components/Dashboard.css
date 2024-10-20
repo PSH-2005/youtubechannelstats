@@ -1,0 +1,285 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.bg-gradient-to-r {
+    background: linear-gradient(270deg, #ff7e5f, #feb47b, #ff6f61, #ffb75e);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.chart-container {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.p-8 {
+    padding: 2rem;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bg-clip-text {
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.bg-gradient-to-r {
+    background-image: linear-gradient(to right, red, yellow);
+}
+
+.shadow-lg {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.rounded-lg {
+    border-radius: 0.5rem;
+}
+
+.text-3xl {
+    font-size: 2rem;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.bg-gray-700 {
+    background-color: #2d2d2d;
+}
+
+.bg-gray-800 {
+    background-color: #1d1d1d;
+}
+
+.space-x-8 > * + * {
+    margin-left: 2rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.items-start {
+    align-items: flex-start;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.space-y-2 > * + * {
+    margin-top: 0.5rem;
+}
+
+.mb-8 {
+    margin-bottom: 2rem;
+}
+
+.mt-8 {
+    margin-top: 2rem;
+}
+
+.w-40 {
+    width: 10rem;
+}
+
+.h-40 {
+    height: 10rem;
+}
+
+.rounded-full {
+    border-radius: 50%;
+}
+
+.shadow-xl {
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.border-4 {
+    border-width: 4px;
+}
+
+.border-gray-700 {
+    border-color: #2d2d2d;
+}
+
+.text-lg {
+    font-size: 1.125rem;
+}
+
+.text-gray-300 {
+    color: #e2e2e2;
+}
+
+/* Particle animation */
+.particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    top: 0;
+    left: 0;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.particle {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    opacity: 0;
+    animation: particle-animation 10s infinite;
+}
+
+@keyframes particle-animation {
+    0% {
+        transform: translateY(0) scale(0.1);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(-50vh) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100vh) scale(0.1);
+        opacity: 0;
+    }
+}
+
+/* Glowing and 3D effect */
+.logo-glow img {
+    box-shadow: 0 0 20px rgba(255, 255, 0, 0.6);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.logo-glow img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(255, 255, 0, 1);
+}
+
+.div-3d {
+    transform: perspective(1000px) rotateY(5deg) rotateX(5deg);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+.select-glow {
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    transition: box-shadow 0.3s, border 0.3s;
+}
+
+.select-glow:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.text-glow {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+.gradient-text {
+    background: linear-gradient(to right, #ff7e5f, #feb47b, #ff6f61, #ffb75e);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  .bg-gradient-to-r {
+    background: linear-gradient(to right, #1f4037, #99f2c8);
+    padding: 2rem;
+    border-radius: 0.5rem;
+  }
+  
+  /* Dashboard.css */
+.text-center {
+  text-align: center;
+}
+
+.text-red-600 {
+  color: #e3342f;
+}
+
+.w-40 {
+  width: 10rem;
+}
+
+.h-40 {
+  height: 10rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Dashboard.css */
+.text-center {
+    text-align: center;
+  }
+  
+  .text-red-600 {
+    color: #e3342f;
+  }
+  
+  .w-80 {
+    width: 20rem; /* Bigger size */
+  }
+  
+  .h-80 {
+    height: 20rem; /* Bigger size */
+  }
+  
+  .mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .min-h-screen {
+    min-height: 100vh;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .items-center {
+    align-items: center;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+  
+  .mb-4 {
+    margin-bottom: 1rem;
+  }
+  
+  .text-5xl {
+    font-size: 3rem;
+  }
+  
+  .font-extrabold {
+    font-weight: 800;
+  }
+  
+  .distorted-text {
+    font-family: 'Creepster', cursive; /* Distorted font style */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Shadow effect */
+  }
+  

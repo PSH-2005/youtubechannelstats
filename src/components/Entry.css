@@ -1,0 +1,56 @@
+/* Entry.css */
+.bg-gradient-animated {
+    background: linear-gradient(270deg, #faaa96, #feb47b, #ffc9c4, #ffb75e);
+    background-size: 400% 400%;
+
+    animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.glow-input {
+    box-shadow: 0 0 15px rgba(255, 87, 51, 0.4);
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+.glow-input:focus {
+    box-shadow: 0 0 25px rgba(255, 87, 51, 0.8);
+}
+
+.glow-text {
+    text-shadow: 0 0 8px rgba(255, 87, 51, 0.8), 0 0 15px rgba(255, 87, 51, 0.5);
+}
+
+.youtube-logo {
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    opacity: 0.15;
+    z-index: 0;
+}
+
+.youtube-logo-1 { top: 10%; left: 15%; transform: rotate(-10deg); }
+.youtube-logo-2 { top: 25%; left: 65%; transform: rotate(15deg); }
+.youtube-logo-3 { top: 60%; left: 25%; transform: rotate(-20deg); }
+.youtube-logo-4 { top: 75%; left: 50%; transform: rotate(10deg); }
+.youtube-logo-5 { top: 5%; left: 80%; transform: rotate(-5deg); }
+.youtube-logo-6 { top: 85%; left: 30%; transform: rotate(8deg); }
+.youtube-logo-7 { top: 45%; left: 10%; transform: rotate(12deg); }
+.youtube-logo-8 { top: 35%; left: 80%; transform: rotate(-15deg); }
+.youtube-logo-9 { top: 15%; left: 40%; transform: rotate(5deg); }
+
+body {
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+    animation: glowingBorder 2s ease-in-out infinite;
+}
+
+@keyframes glowingBorder {
+    0%, 100% { box-shadow: 0 0 20px rgba(255, 0, 0, 0.5); }
+    50% { box-shadow: 0 0 40px rgba(255, 0, 0, 0.8); }
+}
