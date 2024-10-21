@@ -6,9 +6,9 @@ export default function App() {
   return (
     <Router>
       <Routes>
-        {/* Entry Page Route */}
+        {}
         <Route path="/" element={<Entry />} />
-        {/* Dashboard Page Route */}
+        {}
         <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </Router>
